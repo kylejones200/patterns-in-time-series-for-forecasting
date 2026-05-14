@@ -22,7 +22,7 @@ While the human brain is naturally good at recognizing such patterns, the challe
 #### Basic Forecasting Techniques
 At its core, time series forecasting is about using what we know to predict what comes next. Let's explore some foundational approaches, starting with the most straightforward method:
 
-**The Naive Forecast**
+The Naive Forecast
 
 The naive approach assumes that the most recent value in the time series will persist. For instance, in the previous sequence, the last observed value was 2, so we would forecast the next value as 2. This method serves as a baseline or benchmark --- simple but surprisingly effective for short-term predictions in stable systems.
 

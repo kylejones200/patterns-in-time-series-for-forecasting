@@ -1,7 +1,7 @@
 # Patterns in Time Series for Forecasting
 
-**Published:** 2024-12-18
-**Medium:** [https://medium.com/@kyle-t-jones/patterns-in-time-series-for-forecasting-8a0d3ad3b7f5](https://medium.com/@kyle-t-jones/patterns-in-time-series-for-forecasting-8a0d3ad3b7f5)
+Published: 2024-12-18
+Medium: [https://medium.com/@kyle-t-jones/patterns-in-time-series-for-forecasting-8a0d3ad3b7f5](https://medium.com/@kyle-t-jones/patterns-in-time-series-for-forecasting-8a0d3ad3b7f5)
 
 ## About
 

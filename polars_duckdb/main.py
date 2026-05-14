@@ -8,7 +8,6 @@ import polars as pl
 from datetime import datetime, timedelta
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
 from core import add_forecasts, plot_forecasts
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")

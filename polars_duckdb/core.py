@@ -1,9 +1,10 @@
 """Time series forecast patterns using Polars and DuckDB."""
 
-import duckdb
-import polars as pl
-import matplotlib.pyplot as plt
 from pathlib import Path
+
+import duckdb
+import matplotlib.pyplot as plt
+import polars as pl
 
 
 def add_forecasts(
@@ -35,16 +36,23 @@ def plot_forecasts(
     output_path: Path,
     sma_window: int = 6,
 ):
-    dates  = df[date_col].to_list()
+    dates = df[date_col].to_list()
     actual = df[value_col].to_list()
-    naive  = df["naive_forecast"].to_list()
-    sma    = df["sma_forecast"].to_list()
+    naive = df["naive_forecast"].to_list()
+    sma = df["sma_forecast"].to_list()
 
     if plot:
         fig, ax = plt.subplots(figsize=(10, 6))
-        ax.plot(dates, actual, label="Actual",                      color="brown",  linewidth=1.5)
-        ax.plot(dates, naive,  label="Naive Forecast",              color="#4A90A4",linewidth=1.2)
-        ax.plot(dates, sma,    label=f"{sma_window}-Period SMA",    color="red",    linewidth=1.2, linestyle="--")
+        ax.plot(dates, actual, label="Actual", color="brown", linewidth=1.5)
+        ax.plot(dates, naive, label="Naive Forecast", color="#4A90A4", linewidth=1.2)
+        ax.plot(
+            dates,
+            sma,
+            label=f"{sma_window}-Period SMA",
+            color="red",
+            linewidth=1.2,
+            linestyle="--",
+        )
         ax.set_title(title)
         ax.set_xlabel("Time")
         ax.set_ylabel(value_col)

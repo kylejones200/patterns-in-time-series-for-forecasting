@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Forecast patterns (beehive demo) — Polars + DuckDB rewrite."""
 
-import sys
 import logging
 import numpy as np
 import polars as pl

@@ -40,7 +40,6 @@ def plot_forecasts(
     actual = df[value_col].to_list()
     naive = df["naive_forecast"].to_list()
     sma = df["sma_forecast"].to_list()
-
     if plot:
         fig, ax = plt.subplots(figsize=(10, 6))
         ax.plot(dates, actual, label="Actual", color="brown", linewidth=1.5)

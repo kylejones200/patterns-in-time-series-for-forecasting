@@ -1,8 +1,8 @@
 # Description: Short example for Patterns in Time Series for Forecasting.
 
-
 # Simulated beehive data
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -17,7 +17,6 @@ def main():
     df = pd.DataFrame(data, index=date_range)
     df.index.name = "time"
     df.head()
-
     # Naive Forecast
     df["naive_weight"] = df["weight"].shift(1)
     # Moving Average Forecast
@@ -26,9 +25,7 @@ def main():
     plt.figure(figsize=(10, 6))
     plt.plot(df.index, df["weight"], label="Actual Weight", color="brown")
     plt.plot(df.index, df["naive_weight"], label="Naive Forecast", linestyle="-")
-    plt.plot(
-        df.index, df["sma_weight"], label="6-Hour SMA Forecast", linestyle="--", color="red"
-    )
+    plt.plot(df.index, df["sma_weight"], label="6-Hour SMA Forecast", linestyle="--", color="red")
     plt.title("Forecasting Hive Weight")
     plt.xlabel("Time")
     plt.ylabel("Hive Weight (kg)")

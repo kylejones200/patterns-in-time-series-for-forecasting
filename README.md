@@ -11,14 +11,7 @@ There is information encoded within the structure of the sequence that we decode
 
 <figcaption>Photo by <a class="markup--anchor markup--figure-anchor" rel="photo-creator noopener" target="_blank">Jez Timms</a> on <a class="markup--anchor markup--figure-anchor"
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
